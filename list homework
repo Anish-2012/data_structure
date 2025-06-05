@@ -1,0 +1,9 @@
+list1=["aba","mbbs","madam"]
+def match_words(lis):
+    lis2=[]
+    for i in lis:
+        if i[0]==i[-1]:
+            lis2.append(i)
+    return lis2
+print(match_words(list1))
+    
