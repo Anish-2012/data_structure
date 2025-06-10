@@ -1,0 +1,26 @@
+def calculate_due_amount(total_amount, payment_made):
+    """
+    Calculate the due amount after a payment is made.
+
+    Parameters:
+    total_amount (float): The total amount the customer owes.
+    payment_made (float): The amount the customer has paid.
+
+    Returns:
+    float: The remaining due amount.
+    """
+    if payment_made > total_amount:
+        print("Payment exceeds the total amount. No due amount.")
+        return 0.0
+    due_amount = total_amount - payment_made
+    return due_amount
+
+
+try:
+    total_amount = float(input("Enter the total amount owed: ₹"))
+    payment_made = float(input("Enter the payment made: ₹"))
+    
+    due_amount = calculate_due_amount(total_amount, payment_made)
+    print(f"The remaining due amount is: ₹{due_amount:.2f}")
+except ValueError:
+    print("Invalid input. Please enter numeric values.")
