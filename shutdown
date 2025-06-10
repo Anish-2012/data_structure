@@ -1,0 +1,9 @@
+import os
+import platform
+
+def shutdown():
+    """
+    Simulates a system shutdown by printing a message.
+    For actual shutdown, uncomment the relevant code below.
+    """
+    print("Simulating system shutdown...")
