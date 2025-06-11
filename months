@@ -1,0 +1,7 @@
+import calendar
+
+ 
+print("Months of the Year:")
+for month in calendar.month_name:
+    if month:   
+        print(month)
